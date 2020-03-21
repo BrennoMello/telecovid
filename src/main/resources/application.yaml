@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    #hibernate:
+    #  ddl-auto: update
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://191.252.225.102:5432/telecovid
+    username: app_telecovid_H7T3
+    password: Tu7p&WE>{TJE!s)nSdh{
+    driverClassName: org.postgresql.Driver
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.hibernate: DEBUG

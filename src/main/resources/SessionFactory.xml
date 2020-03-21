@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:postgresql://191.252.225.102:5432/telecovid</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+    <mapping class="br.com.fiocruz.cidacs.telecovid.modelo.TbUsuarioEntity"/>
+      <mapping class="br.com.fiocruz.cidacs.telecovid.modelo.TbAtendimentoEntity"/>
+    <mapping class="br.com.fiocruz.cidacs.telecovid.modelo.TbBairroEntity"/>
+    <mapping class="br.com.fiocruz.cidacs.telecovid.modelo.TbClassificacaoEntity"/>
+    <mapping class="br.com.fiocruz.cidacs.telecovid.modelo.TbMunicipioEntity"/>
+    <mapping class="br.com.fiocruz.cidacs.telecovid.modelo.TbUfEntity"/>
+    <mapping class="br.com.fiocruz.cidacs.telecovid.modelo.TbUnidadeDeSaudeEntity"/>
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
